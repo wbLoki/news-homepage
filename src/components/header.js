@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header className="header">
-      <img src={logo} alt="logo" className="w-8" />
+      <img src={logo} alt="logo" className="w-10 sm:w-14" />
       <button
         aria-controls="main-menu"
         aria-expanded="false"
@@ -30,6 +30,11 @@ function Header() {
         <img src={menu} alt="logo" className="w-8" />
       </button>
 
+      {menuToggle ? (
+        <div className="fixed min-h-screen min-w-full inset-0 bg-black/50 brightness-95 z-10"></div>
+      ) : (
+        ""
+      )}
       <nav>
         <ul id="main-menu" className={menuStyle}>
           <li>Home</li>

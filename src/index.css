@@ -4,11 +4,11 @@
 
 @layer components {
   .menu {
-    @apply flex bg-slate-500 text-left sm:space-x-4 text-xl translate-x-full ease-in-out duration-500
-    sm:translate-x-0 
+    @apply flex text-left sm:space-x-4 text-xl translate-x-full ease-in-out duration-500
+    sm:translate-x-0 py-4 px-6
   }
   .menu li {
-    @apply cursor-pointer
+    @apply cursor-pointer px-4 text-slate-500 active:text-orange-600
   }
   .header {
     @apply flex items-center justify-between
@@ -31,7 +31,7 @@ body {
   .menu {
     position: fixed;
     inset: 0 0 0 30%;
-    background-color: rgba(255, 255, 255, 0.589);
+    background-color: rgba(255, 255, 255);
     flex-direction: column;
     padding: min(30vh, 10rem) 2em;
     gap: 2em;

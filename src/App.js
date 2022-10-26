@@ -4,7 +4,7 @@ import Header from "./components/header";
 
 function App() {
   return (
-    <div className="text-center px-4 pt-6 bg-slate-600 min-h-screen overflow-x-hidden">
+    <div className="text-center px-8 pt-6 sm:px-28 sm:pt-12 min-h-screen overflow-x-hidden">
       <Header />
       <Feed />
     </div>
