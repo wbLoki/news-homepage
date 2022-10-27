@@ -1,12 +1,13 @@
-import "./App.css";
 import Feed from "./components/feed";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="text-center px-8 pt-6 sm:px-28 sm:pt-12 min-h-screen overflow-x-hidden">
+    <div className="App">
       <Header />
       <Feed />
+      <Footer />
     </div>
   );
 }

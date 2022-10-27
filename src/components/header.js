@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/header.css";
 import logo from "../images/logo.svg";
 import menuOpen from "../images/icon-menu.svg";
 import menuClose from "../images/icon-menu-close.svg";
@@ -31,7 +32,7 @@ function Header() {
       </button>
 
       {menuToggle ? (
-        <div className="fixed min-h-screen min-w-full inset-0 bg-black/50 brightness-95 z-10"></div>
+        <div className="shade-effect" onClick={toggleMenu} on></div>
       ) : (
         ""
       )}
